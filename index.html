@@ -27,8 +27,9 @@
                 <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>UI/UX Designer</p>
-                <h1>Hi, I'm <span>Vivek</span> <br> Kumar from INDIA.</h1>
+                <h3>Hello, It's Me</h3>
+                <h1>Vivek Kumar</h1> 
+                <h3>And I'm a <span class="typing"></span></h3>
             </div>
         </div>
     </div>
@@ -165,7 +166,7 @@
             <p>Copyright &copy Vivek Made with ❤️ by Vivek</p>
         </div>
     </div>
-
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script>
         var tablinks=document.getElementsByClassName("tab-links");
         var tabcontents=document.getElementsByClassName("tab-contents");
@@ -206,7 +207,14 @@
       })
       .catch(error => console.error('Error!', error.message))
   })
-
+ 
+        var options = {
+    strings: ['Frontend Developer', 'UI Designer',  'Web Developer','Blogger'],
+    typeSpeed: 50,
+    backSpeed:50,
+    loop: true
+  };
+var typed = new Typed('.typing', options);
 
     </script>
 </body>
